@@ -8,5 +8,5 @@ export class User {
         public image: string,
         public created_date: Date,
         public updated_date: Date
-    ){}
+    ){}    
 }

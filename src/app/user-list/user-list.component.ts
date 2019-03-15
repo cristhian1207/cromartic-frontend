@@ -16,10 +16,10 @@ export class UserListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.refreshUsers();
+    this.loadUsers();
   }
 
-  refreshUsers(){
+  loadUsers(){
     this.userService.users().subscribe(
       data => this.users = data,
       error => console.log(error)
